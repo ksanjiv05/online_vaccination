@@ -13,7 +13,7 @@ app.use(myParser.json({ extended: true })); // need if you want to json data fro
 app.use(cookieParser());
 const port = process.env.Port || 3005;
 
-//app.use("/api", require("./routes/common.js"));
+app.use("/api", require("./routes/common.js"));
 
 app.get("/", (req, res) => {
   console.log("welcome sanjiv");
