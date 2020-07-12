@@ -25,6 +25,7 @@ app.get("/", (req, res) => {
 //   res.send(reg);
 // });
 
-app.listen(port, () => {
-  console.log(`the app listen at port ${port}`);
-});
+// app.listen(port, () => {
+//   console.log(`the app listen at port ${port}`);
+// });
+app.listen(process.env.PORT || 5000);
